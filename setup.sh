@@ -10,6 +10,6 @@ else
     echo "File requirements.txt not found"
 fi
 
-chmod +x main.py
+chmod +x photo_compressor.py
 
 mv photo_compressor.py /usr/local/bin
