@@ -46,6 +46,8 @@ def compressor(deep_dir=None):
             image = image.convert('RGB')
             image.save(f'{os.getcwd()}/{item.rsplit(".")[0]}.webp', 'webp')
 
+            os.remove(item)
+
             logging.debug(f"{item} was compressed")
 
             continue
